@@ -1,0 +1,17 @@
+﻿<Window x:Class="LancioDado.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LancioDado"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="351" Width="729">
+    <Grid>
+        <TextBox Name="TxtDado" HorizontalAlignment="Left" Height="45" Margin="75,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235"/>
+        <Label Content="INSERIRE UN NUMERO DA 1 A 6" HorizontalAlignment="Left" FontSize="15" Height="30" Margin="75,50,0,0" VerticalAlignment="Top" Width="235"/>
+        <Button Content="LANCIO DADO" HorizontalAlignment="Left" Height="40" Margin="460,50,0,0" VerticalAlignment="Top" Width="185" Click="Lancio_Click"/>
+        <Button Content="RICOMINCIA" HorizontalAlignment="Left" Height="40" Margin="460,120,0,0" VerticalAlignment="Top" Width="185" Click="Ricomincia_Click"/>
+        <TextBox Name="TxtRisultato" HorizontalAlignment="Left" Height="45" Margin="240,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235" IsReadOnly="True"/>
+
+    </Grid>
+</Window>
