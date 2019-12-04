@@ -20,43 +20,53 @@ namespace LancioDado
     /// </summary>
     public partial class MainWindow : Window
     {
-        
+
         public MainWindow()
         {
             InitializeComponent();
         }
+        Random random = new Random();
         private void Lancio_Click(object sender, RoutedEventArgs e)
-        { 
+        {
             int da = 1;
             int a = 6;
-            Random random = new Random();
             int numeroCasuale = random.Next(da, a);
+            int crediti = int.Parse(TxtCrediti.Text);
+            if (crediti <= 0)
+                MessageBox.Show("INSERISCI UN NUMERO DI CREDITI POSITIVO");
             try
             {
                 int n = int.Parse(TxtDado.Text);
                 if (n >= 7 || n <= 0)
-                { 
+                {
                     MessageBox.Show("INSERISCI UN NUMERO DA 1 A 6!!!!");
                 }
                 else if (numeroCasuale == n)
                 {
                     TxtRisultato.Text = ($"Il numero uscito è {numeroCasuale}. Complimenti!Hai vinto!");
+                    crediti += 40;
+                    TxtCrediti.Text = ($"{crediti}");
                 }
                 else if (numeroCasuale != n)
                 {
-                    throw new Exception($"Il numero uscito è {numeroCasuale}. Ritenta!");       
+                    TxtRisultato.Text = ($"Il numero uscito è {numeroCasuale}. Ritenta!");
+                    crediti -= 10;
+                    TxtCrediti.Text = ($"{crediti}");
                 }
+                dado.Source = new BitmapImage(new Uri($@"Dadi\dado{numeroCasuale}.png", UriKind.Relative));
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 MessageBox.Show($"Il numero uscito è {numeroCasuale}. Ritenta!");
             }
-        }
 
+        }
         private void Ricomincia_Click(object sender, RoutedEventArgs e)
         {
             TxtDado.Clear();
             TxtRisultato.Clear();
+            TxtCrediti.Clear();
+            dado.Source = null;
         }
     }
 }

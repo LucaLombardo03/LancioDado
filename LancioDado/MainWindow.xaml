@@ -5,13 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LancioDado"
         mc:Ignorable="d"
-        Title="MainWindow" Height="351" Width="729">
-    <Grid>
-        <TextBox Name="TxtDado" HorizontalAlignment="Left" Height="45" Margin="75,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235"/>
-        <Label Content="INSERIRE UN NUMERO DA 1 A 6" HorizontalAlignment="Left" FontSize="15" Height="30" Margin="75,50,0,0" VerticalAlignment="Top" Width="235"/>
-        <Button Content="LANCIO DADO" HorizontalAlignment="Left" Height="40" Margin="460,50,0,0" VerticalAlignment="Top" Width="185" Click="Lancio_Click"/>
-        <Button Content="RICOMINCIA" HorizontalAlignment="Left" Height="40" Margin="460,120,0,0" VerticalAlignment="Top" Width="185" Click="Ricomincia_Click"/>
-        <TextBox Name="TxtRisultato" HorizontalAlignment="Left" Height="45" Margin="240,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235" IsReadOnly="True"/>
+        Title="MainWindow" Height="506" Width="999">
+    <Grid Background="LawnGreen">
+        <TextBox Name="TxtDado" HorizontalAlignment="Left" Height="45" Margin="95,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" FontSize="24" TextAlignment="Center" BorderBrush="Blue" BorderThickness="3"/>
+        <Label Content="INSERIRE UN NUMERO DA 1 A 6" HorizontalAlignment="Left" FontSize="15" Height="40" Margin="25,123,0,0" VerticalAlignment="Top" Width="245" BorderBrush="Black" BorderThickness="5"/>
+        <Button Content="LANCIO DADO" HorizontalAlignment="Left" Height="40" Margin="427,168,0,0" VerticalAlignment="Top" Width="185" Click="Lancio_Click" Background="Red" />
+        <Button Content="RICOMINCIA" HorizontalAlignment="Left" Height="40" Margin="427,395,0,0" VerticalAlignment="Top" Width="185" Click="Ricomincia_Click"/>
+        <TextBox Name="TxtRisultato" FontSize="17" HorizontalAlignment="Left" Height="45" Margin="315,290,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="400" IsReadOnly="True" BorderBrush="Black" BorderThickness="5"/>
+        <Label Content="GIOCO DEI DADI&#xA;" HorizontalAlignment="Left" Height="45" Margin="427,25,0,0" VerticalAlignment="Top" Width="185" BorderBrush="Red" BorderThickness="4" FontSize="17" FontWeight="UltraBold"/>
+        <TextBox x:Name="TxtCrediti" HorizontalAlignment="Left" Height="45" Margin="731,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="245" FontSize="24" TextAlignment="Center" BorderBrush="Blue" BorderThickness="3"/>
+        <Label Content="INSERISCI IL NUMERO DI CREDITI" HorizontalAlignment="Left" FontSize="15" Height="40" Margin="731,123,0,0" VerticalAlignment="Top" Width="245" BorderBrush="Black" BorderThickness="5"/>
+        <Image Name="dado" HorizontalAlignment="Left" Height="181" Margin="753,254,0,0" VerticalAlignment="Top" Width="194" RenderTransformOrigin="0.812,0.53"/>
+        <Label Content="Vincita: +40&#xD;&#xA;Peridita -10" HorizontalAlignment="Left" Height="50" Margin="80,313,0,0" VerticalAlignment="Top" Width="110" FontSize="16" FontFamily="Showcard Gothic"/>
+        <Image Margin="80,10,751,377" Source="download.jpg" Stretch="Fill"/>
+        <Image Margin="770,10,44,358" Source="fiches-png-5.png" Stretch="Fill"/>
 
     </Grid>
 </Window>
