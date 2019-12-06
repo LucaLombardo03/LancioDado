@@ -139,5 +139,14 @@
   <ItemGroup>
     <Resource Include="__fintio.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ricomincia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="asasasasas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="h wsg.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

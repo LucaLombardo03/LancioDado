@@ -5,21 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LancioDado"
         mc:Ignorable="d"
-        Title="MainWindow" Height="506" Width="999">
-    <Grid Background="LawnGreen">
+        Title="MainWindow" Height="506" Width="999" ResizeMode="CanMinimize">
+    <Grid Background="LawnGreen" >
         <Image Source="snow-day-game-background_7814-309.jpg" Stretch="Fill"/>
+        <Image Margin="265,280,238,127" Source="asasasasas.png" Stretch="Fill"/>
         <Image Margin="839,78,0,268" Source="IvPG35G.png" Stretch="Fill"/>
         <Image Margin="360,168,356,217" Source="__fintio.png" Stretch="Fill" MouseUp="Image_MouseUp"/>
         <Image Margin="40,33,722,291" Source="dice-png-734x483_4d984884.png" Stretch="Fill"/>
         <Image Margin="640,154,1,246" Source="coocrediti.png" Stretch="Fill"/>
         <Image Margin="10,153,671,246" Source="logoa6.png" Stretch="Fill"/>
         <TextBox Name="TxtDado" HorizontalAlignment="Left" Height="40" Margin="220,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70" FontSize="24" TextAlignment="Center" BorderBrush="#FFC6D0D2" BorderThickness="3"/>
-        <Button Content="RICOMINCIA" HorizontalAlignment="Left" Height="40" Margin="427,395,0,0" VerticalAlignment="Top" Width="185" Click="Ricomincia_Click"/>
-        <TextBox Name="TxtRisultato" FontSize="17" HorizontalAlignment="Left" Height="45" Margin="315,290,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="400" IsReadOnly="True" BorderBrush="Black" BorderThickness="5"/>
+        <TextBox Name="TxtRisultato" FontSize="17" HorizontalAlignment="Left" Height="45" Margin="315,290,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="400" IsReadOnly="True" BorderThickness="5" Foreground="White">
+            <TextBox.BorderBrush>
+                <ImageBrush/>
+            </TextBox.BorderBrush>
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
         <TextBox x:Name="TxtCrediti" HorizontalAlignment="Left" Height="40" Margin="890,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70" FontSize="24" TextAlignment="Center" BorderBrush="#FFF5F553" BorderThickness="3"/>
         <Image Name="dado" HorizontalAlignment="Left" Height="181" Margin="753,254,0,0" VerticalAlignment="Top" Width="194" RenderTransformOrigin="0.812,0.53"/>
-        <Label Content="Vincita: +40&#xD;&#xA;Peridita -10" HorizontalAlignment="Left" Height="50" Margin="80,313,0,0" VerticalAlignment="Top" Width="110" FontSize="16" FontFamily="Showcard Gothic"/>
         <Image Margin="360,10,311,377" Source="logo.png" Stretch="Fill"/>
+        <Image Margin="360,354,356,31" Source="ricomincia.png" Stretch="Fill" MouseUp="Image_MouseUp_1"/>
+        <Image Margin="20,368,748,58" Source="h wsg.png" Stretch="Fill"/>
+
 
 
 
