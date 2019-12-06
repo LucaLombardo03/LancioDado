@@ -25,7 +25,7 @@
         </TextBox>
         <TextBox x:Name="TxtCrediti" HorizontalAlignment="Left" Height="40" Margin="890,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70" FontSize="24" TextAlignment="Center" BorderBrush="#FFF5F553" BorderThickness="3"/>
         <Image Name="dado" HorizontalAlignment="Left" Height="181" Margin="753,254,0,0" VerticalAlignment="Top" Width="194" RenderTransformOrigin="0.812,0.53"/>
-        <Image Margin="360,10,311,377" Source="logo.png" Stretch="Fill"/>
+        <Image Margin="360,10,311,377" Source="logo.png" Stretch="Fill"/> 
         <Image Margin="360,354,356,31" Source="ricomincia.png" Stretch="Fill" MouseUp="Image_MouseUp_1"/>
         <Image Margin="20,368,748,58" Source="h wsg.png" Stretch="Fill"/>
 
