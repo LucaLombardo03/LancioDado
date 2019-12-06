@@ -109,5 +109,35 @@
   <ItemGroup>
     <Resource Include="fiches-png-5.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="224be4442536b57e6eaba73c8e19b255.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="snow-day-game-background_7814-309.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="logoa6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="coocrediti.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="dice-png-734x483_4d984884.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="IvPG35G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="123finito.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="__fintio.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
